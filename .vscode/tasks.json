@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C/C++: cl.exe build active file",
+      "type": "shell",
+      "command": "cl.exe",
+      "args": [
+        "/Zi",
+        "/EHsc",
+        "/nologo",
+        "/Fe",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "${file}",
+        "/I",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\<version>\\include"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$msCompile"
+      ],
+      "detail": "Generated task by Debugger."
+    }
+  ]
+}
